@@ -1,4 +1,4 @@
 # Personal Website
-[urisalazar.com](https://urisalazar.com)  
+[lasiru1.github.io](https://lasiru1.github.io)  
   
 Used as a blog and showcase for projects.
