@@ -48,26 +48,20 @@
             <aside>Welcome to my website!</aside><br>
             <aside>Here you can find my projects, blog, and contact information.</aside>
         </header>
-        <h2>
-            *** Currently under construction... ***
-        </h2>
-        <p>
-            <aside>My website isn't finished yet. Aiming to share my project portfolio
-                in a simple HTML/CSS format. Until then, please take a look at my GitHub.<br><br>
-            </aside>
-	    </p>
 	<h2>
 	    About me
 	</h2>
 	<p>
             <aside>
-                32 years old, born and raised in Southern California. After living in Los Angeles
-                and Orlando, I'm happy to call San Diego my home. Passionate STEM advocate, Runner,
-                MTG EDH is my happy place. I enjoy traveling and finding the best food spots in SD.
-                I've been studying Japanese since 2018 and making it a life mission to visit every 
-                city in Japan. すごい！Currently working as a Software Tools Engineer at Wind River.
-                Core areas of interest include quantum computing, electric vehicles, cryptocurrency, 
-                robotics, and sustainability. Proud alumni of UC San Diego and Riverside City College. 
+                33 years old, born and raised in Southern California. After living in Los Angeles
+                and Orlando, I'm happy to call San Diego my home. Passionate STEM advocate, Trail 
+                Runner, MTG EDH is my happy place. I enjoy traveling and finding the best food spots
+                in SD. I've been studying Japanese since 2018 and making it a life mission to visit 
+                every city in Japan. すごい！ My skillset includes real-time embedded systems, FPGA 
+                design, embedded Linux, and software tools for aviation and medical certification 
+                DO-178C / IEC 62304. Core areas of interest include quantum computing, electric 
+                vehicles, cryptocurrency, robotics, and sustainability. Former Senior Engineer at 
+                Wind River Systems. Proud alumni of UC San Diego and Riverside City College.
                 <br><br>
             </aside>
             <aside>
@@ -87,12 +81,22 @@
             Projects
         </h2>
         <p>
-            Currently better organized on my LinkedIn and GitHub profiles:
+            <a href="https://github.com/lasiru1/truck-detector">Truck Detector (1/10 Scale Autonomous Vehicle)</a>
+            <ul>
+                <li>Used OpenCV to train a neural network modeled RC car to drive along a track in autopilot and automatically disengage when a truck is confidently labeled from continuous image input processing.</li>
+                <li>NVIDIA Jetson Nano was used for ML processing, OAK-D stereo camera & LiDAR sensors for image capturing.</li>
+                <li>Used ROS2 algorithms (publisher & subscriber nodes); utilized Donkey Simulator to train reinforcement models.</li>
+                <li>Built OpenCV from source; utilized YOLO algorithm on COCO dataset to train our Deep Neural Network model.</li>
+                <li>GPU supercluster trained model on thousands of images taken during track runs; autopilot mode mapped real-time environment data to steering angle and velocity, combined with real-time object detection using DNN models.</li>
+            </ul>
             <br>
-            <a href="https://www.linkedin.com/in/urisalazar">LinkedIn</a>
-            <br>
-            <a href="https://github.com/lasiru1">GitHub</a>
-            <br>
+            <a href="https://devpost.com/software/prospect">Prospect (Travel & Health Mobile App)</a>
+            <ul>
+                <li>Prototyped a travel-logging app that recommends safe travel destinations based on COVID-19 data; completed during a 36-hour hackathon in a team of four, utilized Figma and data queries to demonstrate proof-of-concept.</li>
+                <li>Developed back-end using Spring Boot web framework with PostgreSQL database for storing/processing GPS data.</li>
+                <li>Implemented JSON parser for more efficient data collecting; initiated a GraphQL prototype for UI map coloring.</li>
+            </ul>
+
         </p>
         <h2>
             <br>
@@ -111,7 +115,7 @@
         <p>
             <script language = "JavaScript">
             var username = "uri.salazar";
-            var hostname = "pm.me";
+            var hostname = "proton.me";
             var linktext = username + "@" + hostname;
             document.write("<a href = '" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
             </script>
