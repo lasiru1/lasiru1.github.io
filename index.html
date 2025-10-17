@@ -31,13 +31,9 @@
                 color: #ccf;
             }
         </style>
-    <!--
-        index
-    -->
     </head>
-
     <body>
-    <header id = "top"></header>
+        <header id = "top"></header>
         <header>
             <h1>
                 Uri Salazar
@@ -47,12 +43,13 @@
             </h1>
             <aside>Welcome to my website!</aside><br>
             <aside>Here you can find my projects, blog, and contact information.</aside>
+            <!-- LinkedIn and GitHub icons go here -->
         </header>
-	<h2>
-        <br>
-	    About me
-	</h2>
-	<p>
+        <h2>
+            <br>
+            About me
+        </h2>
+        <p>
             <aside>
                 33 years old, born and raised in Southern California. After living in Los Angeles
                 and Orlando, I'm happy to call San Diego my home. Passionate STEM advocate, Trail 
@@ -65,16 +62,14 @@
                 River Systems. Proud alumni of UC San Diego and Riverside City College.
                 <br><br>
             </aside>
-            <aside>
-                Other interesting facts:
-            </aside>
-    </p>
+            <aside>Other interesting facts:</aside>
+        </p>
         <p>
             <ul>
                 <li>I'm a huge LOTR fan and listen to the film score consistently.</li>
                 <li>Big PS5 gamer, currently enjoying Kunitsu-Gami: Path of the Goddess.</li>
                 <li>I also enjoy cycling and tennis, currently training to complete a century ride.</li>
-                <li>The 3DS and Vita are peak handheld gaming, I always have one on me.</li>
+                <li>The PS Vita is peak handheld gaming--I always have one on me.</li>
             </ul>
         </p>
         <h2>
@@ -91,6 +86,11 @@
                 <li>GPU supercluster trained model on thousands of images taken during track runs; autopilot mode mapped real-time environment data to steering angle and velocity, combined with real-time object detection using DNN models.</li>
             </ul>
             <br>
+            <a href="https://github.com/lasiru1/Bitcoin-Hashing-Module">Bitcoin Hashing Module</a> (RTL Model based on SHA-256)
+            <ul>
+                <li>Utilizes a SHA-256 module to create output hash values for digital data blocks used in blockchain.</li>
+            </ul>
+            <br>
             <a href="https://devpost.com/software/prospect">Prospect</a> (Travel & Health Mobile App)
             <ul>
                 <li>Prototyped a travel-logging app that recommends safe travel destinations based on COVID-19 data; completed during a 36-hour hackathon in a team of four, utilized Figma and data queries to demonstrate proof-of-concept.</li>
@@ -98,7 +98,7 @@
                 <li>Implemented JSON parser for more efficient data collecting; initiated a GraphQL prototype for UI map coloring.</li>
             </ul>
             <br>
-            <a href="https://github.com/lasiru1/Susumeru">Susumeru</a> (Media Recommender System)
+            <a href="https://github.com/lasiru1/Susumeru">Susumeru</a> (Anime Recommender System)
             <ul>
                 <li>Trained a model on a myanimelist.net dataset of 300K users + 80M records using collaborative filtering algorithms.</li>
                 <li>Utilized K-nearest neighbors and cosine similarity techniques to find similarities between users and genres.</li>
@@ -115,19 +115,36 @@
                 <li>Developed, tested, and refined by our four-person team in 48 hours for an on-site, hardware-focused hackathon.</li>
             </ul>
             <br>
+            <a href="https://github.com/lasiru1/plus-edge">PositiveEdge</a> (Line-Following Robot Car)
+            <ul>
+                <li>Microcontroller car based on reinforcement learning, built to follow a black line on a white surface; 3D-printed chassis using Solidworks CAD, integrated circuit design for the 4-potentiometer speed + PID control board.</li>
+                <li>Utilized C++ and various Arduino libraries to input photoresistor sensor-value data into a proportion-integral-derivative (PID) error system that modified dyadic rear-wheel velocities depending on input data (brightness values).</li>
+                <li>Implemented software testing, debugging, and test-driven development around the Arduino Mega 2560 microcontroller.</li>
+            </ul>
+            <br>
             <a href="https://devpost.com/software/yourta">yourTA.online</a> (Multiple-Node IoT Device)
             <ul>
-                <li>Developed a recycling image capture system by prototyping a circuit board and Arduino logic set that programmedultrasonic, photoresistor, and passive infrared sensors; captured images of targets and assigned recyclability values.</li>
+                <li>Developed a recycling image capture system by prototyping a circuit board and Arduino logic set that programmed ultrasonic, photoresistor, and passive infrared sensors; captured images of targets and assigned recyclability values.</li>
                 <li>Utilized a static JSON buffer to store sensor values and an HTTP client object to send motion data to a target IP.</li>
                 <li>Developed a Node.js server to display updated sensor values in real-time using an ESP8266 Wi-Fi transceiver.</li>
-                <li>Built during SD Hacks 2019, a 48-hour hackathon, by a two-person team. Our project won the Northrop Grummancategory award, "Best IoT Device to Incorporate Multiple Nodes."</li>
+                <li>Built during SD Hacks 2019, a 48-hour hackathon, by a two-person team. Our project won the Northrop Grumman category award, "Best IoT Device to Incorporate Multiple Nodes."</li>
             </ul>
             <br>
             <a href="https://github.com/ericlbarrett/SyrusSUITS">Syrus</a> (AR Navigation System)
             <ul>
-                <li>Developed a navigation system that included pathfinding, virtual arrows, a user interface, and a 3D mini-map inC# and Unity aiming to assist astronauts aboard the International Space Station in completing technical objectives.</li>
-                <li>Programmed using Microsoft HoloLens framework; utilized Leap Motion Controller for optical hand-tracking.</li>
-                <li>Our ten-person team represented the only community college in the nation to have their proposal accepted byNASA and selected to participate at the Johnson Space Center in Houston, TX to demo a functioning prototype.</li>
+                <li>Developed a navigation system that included pathfinding, virtual arrows, a user interface, and a 3D mini-map in C# and Unity, aiming to assist astronauts aboard the International Space Station in completing technical objectives.</li>
+                <li>Programmed using Microsoft HoloLens framework; utilized Leap Motion controller for optical hand-tracking.</li>
+                <li>Our ten-person team represented the only community college in the nation to have their proposal accepted by NASA and selected to participate at the Johnson Space Center in Houston, TX to demo a functioning prototype.</li>
+                <li>Built for the design challenge program, NASA Spacesuit User Interface Technologies for Students (SUITS).</li>
+            </ul>
+            <br>
+            <a href="https://github.com/lasiru1/sorry">Sorry!</a> (C++ ASCII Console Game)
+            <ul>
+                <li>An interactive, character-based game that can be played entirely in the console. Based on the 1934 Parker Brothers board game.</li>
+                <li>Developed a bot algorithm for single-player mode; the algorithm is based off a series of if-else conditions that determines optimal moves for winning.</li>
+                <li>Implements user-input validation and error-checking to prevent illegal player moves; updates and prints visual state of the board after each player move.</li>
+                <li>Used as a showcase project for intro to logic design--includes thorough report with flowcharts, pseudocode, and tables outlining core C++ functions/concepts used.</li>
+
             </ul>
         </p>
         <h2>
@@ -135,10 +152,10 @@
             Blog
         </h2>
         <p>
-            My online journal. I want to share some interesting stories about things that interest me.
-            Ideally, I would like to write an entry once a month. Stay tuned!
+            My online journal. I want to share some interesting stories and tech tips about things 
+            that interest me. Planning on writing an entry once a month. Stay tuned!
             <br>
-	    <a href="blog.html">Blog</a>
+	        <a href="blog.html">Blog</a>
         </p>
         <h2>
             <br>
@@ -165,3 +182,4 @@
         </p>
     </body>
 </html>
+
