@@ -51,9 +51,9 @@
         </h2>
         <p>
             <aside>
-                33 years old, born and raised in Southern California. After living in Los Angeles
+                I'm a tech geek, born and raised in Southern California. After living in Los Angeles
                 and Orlando, I'm happy to call San Diego my home. Passionate STEM advocate, Trail 
-                Runner, MTG EDH is my happy place. I enjoy traveling and finding the best food spots
+                Runner, casual MtG EDH player. I enjoy traveling and finding the best food spots
                 in SD. I've been studying Japanese since 2018 and making it a life mission to visit 
                 every city in Japan. すごい！ My skillset includes real-time embedded systems, FPGA 
                 design, embedded Linux, and software tools for aviation and medical certification 
@@ -88,7 +88,11 @@
             <br>
             <a href="https://github.com/lasiru1/Bitcoin-Hashing-Module">Bitcoin Hashing Module</a> (RTL Model based on SHA-256)
             <ul>
-                <li>Utilizes a SHA-256 module to create output hash values for digital data blocks used in blockchain.</li>
+                <li>Developed a hashing module interface in SystemVerilog for the Arria II GX; designed a SHA-256 module to create output hash values for 512-bit data blocks used in Bitcoin's blockchain.</li>
+                <li>Input message was modified by changing the nonce values, where the constraint of 16 nonce values was considered an acceptance criteria for the correct hash value. Message size was 640 bits (20 words); testbench instantiated memory into 2 blocks.</li>
+                <li>Implemented a 3-phase algorithm that calculates the hash values for the 1st block once, then creates 16 hash values for the 2nd block.</li>
+                <li>Designed algorithms to utilize state machines; module interface featured 5 inputs/1 output, memory interface featured 1 input/4 outputs; acheived an Fmax of 108.85 Mhz.</li>
+                <li>Tested RTL models with testbenches to verify correct hash values were being generated. Used Quartus Prime and ModelSim to generate waveforms, resource usage, timing and fitting reports.</li>
             </ul>
             <br>
             <a href="https://devpost.com/software/prospect">Prospect</a> (Travel & Health Mobile App)
@@ -117,12 +121,12 @@
             <br>
             <a href="https://github.com/lasiru1/plus-edge">PositiveEdge</a> (Line-Following Robot Car)
             <ul>
-                <li>Microcontroller car based on reinforcement learning, built to follow a black line on a white surface; 3D-printed chassis using Solidworks CAD, integrated circuit design for the 4-potentiometer speed + PID control board.</li>
+                <li>Custom-built microcontroller car based on reinforcement learning, built to follow a black line on a white surface; 3D-printed chassis using Solidworks CAD, integrated circuit design for the 4-potentiometer control board (Speed + PID).</li>
                 <li>Utilized C++ and various Arduino libraries to input photoresistor sensor-value data into a proportion-integral-derivative (PID) error system that modified dyadic rear-wheel velocities depending on input data (brightness values).</li>
                 <li>Implemented software testing, debugging, and test-driven development around the Arduino Mega 2560 microcontroller.</li>
             </ul>
             <br>
-            <a href="https://devpost.com/software/yourta">yourTA.online</a> (Multiple-Node IoT Device)
+            <a href="https://devpost.com/software/yourta">yourTA.online</a> (Smart Recycling Bin)
             <ul>
                 <li>Developed a recycling image capture system by prototyping a circuit board and Arduino logic set that programmed ultrasonic, photoresistor, and passive infrared sensors; captured images of targets and assigned recyclability values.</li>
                 <li>Utilized a static JSON buffer to store sensor values and an HTTP client object to send motion data to a target IP.</li>
@@ -140,11 +144,10 @@
             <br>
             <a href="https://github.com/lasiru1/sorry">Sorry!</a> (C++ ASCII Console Game)
             <ul>
-                <li>An interactive, character-based game that can be played entirely in the console. Based on the 1934 Parker Brothers board game.</li>
+                <li>An interactive, character-based game that can be played entirely in the console; based on the 1934 Parker Brothers board game.</li>
                 <li>Developed a bot algorithm for single-player mode; the algorithm is based off a series of if-else conditions that determines optimal moves for winning.</li>
                 <li>Implements user-input validation and error-checking to prevent illegal player moves; updates and prints visual state of the board after each player move.</li>
                 <li>Used as a showcase project for intro to logic design--includes thorough report with flowcharts, pseudocode, and tables outlining core C++ functions/concepts used.</li>
-
             </ul>
         </p>
         <h2>
